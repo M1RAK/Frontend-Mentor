@@ -20,15 +20,15 @@
 }
 @font-face {
   font-family: "Outfit-Regular";
-  src: url("../assets/fonts/outfit/static/Outfit-Regular.ttf");
+  src: url("../assets/fonts/outfit/Outfit-Regular.ttf");
 }
 @font-face {
   font-family: "Outfit-Medium";
-  src: url("../assets/fonts/outfit/static/Outfit-Medium.ttf");
+  src: url("../assets/fonts/outfit/Outfit-Medium.ttf");
 }
 @font-face {
   font-family: "Outfit-Semibold";
-  src: url("../assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+  src: url("../assets/fonts/outfit/Outfit-SemiBold.ttf");
 }
 
 h2,
@@ -156,9 +156,31 @@ header .hero-image img {
 
 .attribution {
   margin-top: 2rem;
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  font-family: "Young Serif";
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+    color: var(--Nutmeg);
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  body {
+    font-size: 14px;
+  }
+  .nutrition-class {
+    width: 90%;
+    padding: 0 1rem;
+    gap: 30%;
+  }
 }

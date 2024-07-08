@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/recipe-page-main)
--   Live Site URL: [Recipe-page-main](https://recipe-page-main--steady-gecko-afcceb.netlify.app/)
+-   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/social-links-profile-main)
+-   Live Site URL: [Social Links Profile](https://eclectic-vacherin-5f8767.netlify.app/)
 
 ## My process
 

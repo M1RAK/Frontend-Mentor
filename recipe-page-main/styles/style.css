@@ -140,18 +140,19 @@ header .hero-image img {
   margin-top: 1rem;
   width: 100%;
 }
-.nutrition-table hr {
-  color: var(--Light-Grey);
-  opacity: 0.4;
-}
 .nutrition-class {
   height: 50px;
-  width: 70%;
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50%;
+  text-align: start;
+  border-bottom: 1px solid var(--Light-Grey);
+}
+.nutrition-value {
+  font-weight: bold;
+  color: var(--Nutmeg);
 }
 
 .attribution {
@@ -164,7 +165,7 @@ header .hero-image img {
   font-family: "Young Serif";
 }
 
-@media (max-width: 450px) {
+@media (max-width: 475px) {
   h2 {
     font-size: 1.5rem;
   }
@@ -179,8 +180,6 @@ header .hero-image img {
     font-size: 14px;
   }
   .nutrition-class {
-    width: 90%;
-    padding: 0 1rem;
-    gap: 30%;
+    padding-right: 10%;
   }
 }

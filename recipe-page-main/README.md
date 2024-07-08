@@ -31,7 +31,7 @@ Want some support on the challenge? [Join our community](https://www.frontendmen
 
 ### Links
 
--   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/recipe-page-main)
+-   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/recipe-page-main)
 -   Live Site URL: [Recipe-page-main](https://recipe-page-main--steady-gecko-afcceb.netlify.app/)
 
 ## My process

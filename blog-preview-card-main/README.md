@@ -1,7 +1,6 @@
 # Frontend Mentor - Blog preview card solution
 
-This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -30,7 +29,7 @@ Want some support on the challenge? [Join our community](https://www.frontendmen
 ### Links
 
 -   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/blog-preview-card-main)
--   Live Site URL: [blog-preview-card-main](https://recipe-page-main--steady-gecko-afcceb.netlify.app/)
+-   Live Site URL: [blog-preview-card-main](https://main--helpful-raindrop-688244.netlify.app/)
 
 ## My process
 

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,700,50&family=Montserrat:wght@500;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	// ## Colors
+	// ### Primary
+	--Dark-cyan: hsl(158, 36%, 37%);
+	--Cream: hsl(30, 38%, 92%);
+
+	// ### Neutral
+	--Very-dark-blue: hsl(212, 21%, 14%);
+	--Dark-grayish-blue: hsl(228, 12%, 48%);
+	--White: hsl(0, 0%, 100%);
+}
+
+// Fonts
+.fraunces-header {
+	font-family: 'Fraunces', serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-variation-settings: 'SOFT' 50, 'WONK' 0;
+}
+.montserrat-regular {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+.montserrat-bold {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+body {
+	background-color: var(--Cream);
+	padding: 10px;
+}
+
+.card {
+	margin: 0 auto;
+	margin-top: 3rem;
+	max-width: 600px;
+	border-radius: 6px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	&-right {
+		border-radius: 5px 0 0 5px;
+		background-image: url('../images/image-product-desktop.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&-left {
+		background-color: var(--White);
+		padding: 24px;
+		border-radius: 0 5px 5px 0;
+
+		.card-tag {
+			letter-spacing: 2px;
+			color: var(--Dark-grayish-blue);
+		}
+
+		.card-title {
+			margin-top: 0.5rem;
+			margin-bottom: 0.75rem;
+			font-size: 2.5rem;
+			line-height: 2.2rem;
+		}
+
+		.card-desc {
+			margin: 2rem 0;
+			font-size: 14px;
+			letter-spacing: 0.85px;
+			line-height: 1.5rem;
+			color: var(--Dark-grayish-blue);
+		}
+
+		.card-price {
+			margin: 1rem 0;
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+
+			h3 {
+				font-size: 2rem;
+				color: var(--Dark-cyan);
+			}
+		}
+
+		.card-btn {
+			margin-top: 2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			background-color: var(--Dark-cyan);
+			width: 100%;
+			padding: 16px 20px;
+			border: none;
+			border-radius: 6px;
+			color: var(--White);
+
+			&:hover {
+				background-color: rgb(36, 87, 69);
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.attribution {
+	margin-top: 5rem;
+	font-size: 14px;
+	text-align: center;
+	a {
+		color:var(--Dark-cyan);
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 600px) {
+	.card {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		&-right {
+			border-radius: 5px 5px 0 0;
+			min-height: 300px;
+			background-image: url('../images/image-product-mobile.jpg');
+		}
+		&-left {
+			border-radius: 0 0 5px 5px;
+		}
+	}
+}

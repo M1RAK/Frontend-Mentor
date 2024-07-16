@@ -29,7 +29,7 @@ Want some support on the challenge? [Join our community](https://www.frontendmen
 ### Links
 
 -   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/product-preview-card-component-main)
--   Live Site URL: [product-preview-card-component-main](https://singular-sopapillas-c4fec8.netlify.app/)
+-   Live Site URL: [product-preview-card-component-main](https://main--cheerful-fudge-4cbbfc.netlify.app/)
 
 ## My process
 

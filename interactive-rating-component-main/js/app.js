@@ -28,25 +28,7 @@ function renderThankYouPage() {
 }
 
 function renderActivePage() {
-	let text = ''
-	text = `<div class="card-logo">
-				<img src="./images/icon-star.svg" alt="icon-star" />
-			</div>
-			<h2>How did we do?</h2>
-			<p>
-				How did we do? Please let us know how we did with your support
-				request. All feedback is appreciated to help us improve our
-				offering!
-			</p>
-			<div class="card-ratings">
-				<button class="ratings-btn" data-id="1">1</button>
-				<button class="ratings-btn" data-id="2">2</button>
-				<button class="ratings-btn" data-id="3">3</button>
-				<button class="ratings-btn" data-id="4">4</button>
-				<button class="ratings-btn" data-id="5">5</button>
-			</div>
-			<button class="card-submit-btn">Submit</button>`
-	cardEl.innerHTML = text
+	location.reload()
 }
 
 function resetActiveState() {
@@ -57,10 +39,10 @@ function resetActiveState() {
 	})
 }
 
-function setDelay(time, func){
-       setTimeout(() => {
-             func()
-       },time)
+function setDelay(time, func) {
+	setTimeout(() => {
+		func()
+	}, time)
 }
 
 submitBtn.addEventListener('click', () => {

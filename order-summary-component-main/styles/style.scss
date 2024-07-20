@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	// ## Colors
+	// ### Primary
+	--Pale-blue: hsl(225, 100%, 94%);
+	--Bright-blue: hsl(245, 75%, 52%);
+
+	// ### Neutral
+	--Very-pale-blue: hsl(225, 100%, 98%);
+	--Desaturated-blue: hsl(225, 41%, 44%);
+	--Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+	background-image: url('../images/pattern-background-desktop.svg');
+	background-repeat: no-repeat;
+	font-family: 'Red Hat Display';
+	font-size: 16px;
+	padding: 10px;
+}
+
+.card {
+	margin: 0 auto;
+	max-width: 450px;
+	background-color: #fff;
+	border-radius: 9px;
+	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+
+	&-header {
+		img {
+			width: 100%;
+			height: fit-content;
+			border-radius: 9px 9px 0 0;
+		}
+	}
+
+	&-body {
+		margin: 1.5rem 0;
+		padding: 12px 38px;
+		text-align: center;
+	}
+
+	&-title {
+		color: var(--Dark-blue);
+	}
+
+	&-text {
+		margin: 1.25rem 0;
+	}
+
+	&-plan {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		background-color: var(--Very-pale-blue);
+		padding: 10px 20px;
+		border-radius: 5px;
+		margin-bottom: 1rem;
+
+		&-link {
+			margin-left: auto;
+			color: var(--Bright-blue);
+			font-weight: 500;
+
+			&:hover {
+				color: var(--Desaturated-blue);
+			}
+		}
+	}
+
+	&-btn {
+		margin: 0.5rem 0;
+		width: 100%;
+		background-color: transparent;
+		border: none;
+		border-radius: 9px;
+		padding: 15px 20px;
+		color: var(--Desaturated-blue);
+		font-family: 'Red Hat Display';
+		font-weight: 700;
+		cursor: pointer;
+
+		&--proceed {
+			color: var(--Very-pale-blue);
+			background-color: var(--Bright-blue);
+			box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
+
+			&:hover {
+				background-color: var(--Desaturated-blue);
+			}
+		}
+
+		&--cancel {
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}
+
+.attribution {
+	text-align: center;
+	margin-top: 1rem;
+
+	a {
+		font-family: 'Red Hat Display';
+		color: var(--Dark-blue);
+	}
+}
+
+@media (max-width: 385px) {
+	body {
+		background-image: url('../images/pattern-background-mobile.svg');
+	}
+
+	.card-body {
+		padding: 12px 20px;
+	}
+
+	.card-plan {
+		padding: 10px;
+		min-width: 250px;
+	}
+}

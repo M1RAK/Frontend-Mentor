@@ -21,7 +21,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 -   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/qr-code-component-main)
--   Live Site URL: [qr-code-component-main](https://clinquant-haupia-924639.netlify.app/)
+-   Live Site URL: [qr-code-component-main](https://courageous-malasada-c282cb.netlify.app/)
 
 ## My process
 

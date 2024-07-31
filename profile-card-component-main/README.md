@@ -25,8 +25,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
--   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/order-summary-component-main)
--   Live Site URL: [order-summary-component-main](https://effortless-figolla-bfee8f.netlify.app/)
+-   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/profile-card-component-main)
+-   Live Site URL: [profile-card-component-main](https://fantastic-bonbon-6886cf.netlify.app/)
 
 ## My process
 

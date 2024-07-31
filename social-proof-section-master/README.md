@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/social-proof-section-master)
--   Live Site URL: [social-proof-section-master](https://effortless-figolla-bfee8f.netlify.app/)
+-   Live Site URL: [social-proof-section-master](https://main--nimble-mandazi-bdcbc1.netlify.app/)
 
 ## My process
 

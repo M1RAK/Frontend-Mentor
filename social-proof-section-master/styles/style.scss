@@ -56,7 +56,6 @@ main {
 	.desc {
 		&-wrapper {
 			width: 40%;
-	
 		}
 
 		&-title {
@@ -77,7 +76,6 @@ main {
 		align-items: flex-end;
 		gap: 1rem;
 		width: 60%;
-
 
 		.review {
 			@extend .flex;
@@ -208,13 +206,20 @@ main {
 	.section--bottom {
 		flex-direction: column;
 
-		.card{
+		.card {
 			margin-top: 0 !important;
 		}
 	}
 }
 
 @media (max-width: 528px) {
+	body {
+		background-image: url('../images/bg-pattern-top-mobile.svg'),
+			url('../images/bg-pattern-bottom-mobile.svg');
+		background-repeat: no-repeat, no-repeat;
+		background-position: left top, right bottom;
+	}
+
 	h1 {
 		font-size: 3rem;
 	}

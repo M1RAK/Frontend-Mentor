@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/order-summary-component-main)
--   Live Site URL: [order-summary-component-main](https://courageous-malasada-c282cb.netlify.app/)
+-   Live Site URL: [order-summary-component-main](https://effortless-figolla-bfee8f.netlify.app/)
 
 ## My process
 

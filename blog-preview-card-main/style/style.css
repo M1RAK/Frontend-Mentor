@@ -15,16 +15,28 @@
   src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
 }
 
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--Yellow);
   width: 100vw;
   padding: 20px 10px;
   font-family: "Figtree", sans-serif;
 }
 
+main {
+  flex: 1;
+}
+
 .card {
   max-width: 350px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,18 +46,18 @@ body {
   box-shadow: 9px 9px black;
   border: 1px solid var(--Black);
 }
-.card .hero img {
+.card-header img {
   border-radius: 9px;
   width: 100%;
 }
-.card .meta h2 {
+.card-body h2 {
   margin: 1rem 0;
 }
-.card .meta h2:hover {
+.card-body h2:hover {
   color: var(--Yellow);
   cursor: pointer;
 }
-.card .meta .tag {
+.card-body-tag {
   background-color: var(--Yellow);
   width: -moz-fit-content;
   width: fit-content;
@@ -55,23 +67,22 @@ body {
   color: var(--Black);
   font-weight: 500;
 }
-.card .meta .date {
+.card-body-date {
   font-weight: 500;
   margin-top: 0.5rem;
 }
-.card .meta .footer {
+.card-footer {
   margin-top: 1.25rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   color: var(--Black);
 }
-.card .meta .footer img {
+.card-footer img {
   width: 42px;
 }
 
 .attribution {
-  margin-top: 3rem;
   font-size: 16px;
   text-align: center;
 }

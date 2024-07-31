@@ -31,12 +31,12 @@
   src: url("../assets/fonts/outfit/Outfit-SemiBold.ttf");
 }
 
-h2,
+h1,
 h3 {
   font-family: "Young Serif";
 }
 
-h2 {
+h1 {
   font-size: 2rem;
 }
 
@@ -64,15 +64,15 @@ main {
   border-radius: 9px;
 }
 
-header h2 {
+.header h1 {
   margin: 1rem 0;
 }
-header .hero-image {
+.header .hero-image {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-header .hero-image img {
+.header .hero-image img {
   width: 100%;
   border-radius: 5px;
 }

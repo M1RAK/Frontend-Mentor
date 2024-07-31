@@ -1,4 +1,4 @@
-const summaryList = document.querySelector('.summary-list')
+const statsList = document.querySelector('.stats-list')
 
 async function fetchResultData() {
 	try {
@@ -11,22 +11,22 @@ async function fetchResultData() {
 		}
 
 		const data = await response.json()
-		let resultEl = ''
+		let statEl = ''
 
-		data.forEach((result) => {
-			const { category, score, icon } = result
-			resultEl += `<div class="result-summary ${category.toLowerCase()}">
-							<span class="title">
+		data.forEach((stat) => {
+			const { category, score, icon } = stat
+			statEl += `<div class="stat-wrapper ${category.toLowerCase()}">
+							<span class="stat-title">
 								<img
 									src="${icon}"
 									alt="icon-${category.toLowerCase()}" />
 								<b>${category}</b>
 							</span>
-							<span class="score"> <b>${score}</b> / 100 </span>
+							<span class="stat-score"> <b>${score}</b> / 100 </span>
 						</div>`
 		})
 
-		summaryList.innerHTML = resultEl
+		statsList.innerHTML = statEl
 	} catch (error) {
 		console.error('There was a problem fetching the data:', error)
 	}

@@ -37,11 +37,11 @@
 	}
 }
 
-h2,
+h1,
 h3 {
 	font-family: 'Young Serif';
 }
-h2 {
+h1 {
 	font-size: 2rem;
 }
 h3 {
@@ -67,8 +67,8 @@ main {
 	border-radius: 9px;
 }
 
-header {
-	h2 {
+.header {
+	h1 {
 		margin: 1rem 0;
 	}
 
@@ -172,8 +172,8 @@ header {
 		text-align: start;
 		border-bottom: 1px solid var(--Light-Grey);
 	}
-	
-	&-value{
+
+	&-value {
 		font-weight: bold;
 		color: var(--Nutmeg);
 	}

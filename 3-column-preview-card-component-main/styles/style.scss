@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	// ## Colors
+	// ### Primary
+	--Bright-orange: hsl(31, 77%, 52%);
+	--clr-suv: #f08512;
+	--Dark-cyan: hsl(184, 100%, 22%);
+	--Very-dark-cyan: hsl(179, 100%, 13%);
+
+	// ### Neutral
+	--Transparent-white: hsla(0, 0%, 100%, 0.75); // (paragraphs)
+	--Very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: 'Lexend Deca', serif;
+	font-size: 15px;
+	background-color: var(--Very-light-gray);
+	padding: 75px;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
+
+.cards-container {
+	margin: 0 auto;
+	max-width: 900px;
+	height: fit-content;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	width: 100%;
+	padding: 2rem;
+	color: var(--Transparent-white);
+
+	&-title {
+		font-family: 'Big Shoulders Display';
+		font-size: 2.5rem;
+		color: var(--Very-light-gray);
+		margin: 1.25rem 0;
+		text-transform: uppercase;
+	}
+
+	&-desc {
+		letter-spacing: 1px;
+		margin-bottom: 3rem;
+	}
+
+	&-btn {
+		font-family: 'Lexend Deca';
+		width: 120px;
+		padding: 0.75rem 0.1rem;
+		border: none;
+		border-radius: 30px;
+		background-color: var(--Very-light-gray);
+		transition: all ease 0.1s;
+
+		&:hover {
+			cursor: pointer;
+			color: var(--Transparent-white);
+			background-color: transparent;
+			border: 1px solid var(--Very-light-gray);
+		}
+	}
+
+	&--sedan {
+		background-color: var(--Bright-orange);
+		border-radius: 5px 0 0 5px;
+
+		button {
+			color: var(--Bright-orange);
+		}
+	}
+
+	&--suv {
+		background-color: var(--Dark-cyan);
+		button {
+			color: var(--Dark-cyan);
+		}
+	}
+	&--luxury {
+		background-color: var(--Very-dark-cyan);
+		border-radius: 0 5px 5px 0;
+		button {
+			color: var(--Very-dark-cyan);
+		}
+	}
+}
+
+footer {
+	margin-top: 1rem;
+	.attribution {
+		text-align: center;
+		font-family: 'Lexend Deca';
+		a {
+			color: var(--Very-dark-cyan);
+		}
+	}
+}
+
+@media (max-width: 925px) {
+	body {
+		padding: 10px;
+	}
+
+	.cards-container {
+		flex-direction: column;
+	}
+
+	.card {
+		&--sedan {
+			border-radius: 5px 5px 0 0;
+		}
+
+		&--luxury {
+			border-radius: 0 0 5px 5px;
+		}
+	}
+}

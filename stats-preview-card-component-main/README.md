@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/stats-preview-card-component-main)
--   Live Site URL: [stats-preview-card-component-main](https://courageous-malasada-c282cb.netlify.app/)
+-   Live Site URL: [stats-preview-card-component-main](https://loquacious-kitten-0d2e93.netlify.app/)
 
 ## My process
 

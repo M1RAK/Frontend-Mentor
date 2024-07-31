@@ -33,6 +33,7 @@ body {
   border-radius: 15px;
 }
 .card-logo {
+  margin-bottom: 2rem;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -42,8 +43,8 @@ body {
   background-color: #26313d;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.2);
 }
-.card h2 {
-  margin: 1rem 0;
+.card h1 {
+  margin-bottom: 1rem;
 }
 .card p {
   margin-bottom: 2rem;

@@ -12,45 +12,59 @@
 		<title>Frontend Mentor | Blog preview card</title>
 	</head>
 	<body>
-		<div class="card">
-			<div class="hero">
-				<img
-					src="./assets/images/illustration-article.svg"
-					alt="illustration-article" />
-			</div>
-			<div class="meta">
-				<div class="tag">
-					<b>Learning</b>
+
+		<main role="main">
+			<div class="card">
+
+				<div class="card-header">
+					<img
+						src="./assets/images/illustration-article.svg"
+						alt="illustration-article" />
 				</div>
-				<div class="date">
-					<small>Published 21 Dec 2023</small>
+
+				<div class="card-body">
+					<div class="card-tag">
+						<b>Learning</b>
+					</div>
+					<div class="card-date">
+						<small>Published 21 Dec 2023</small>
+					</div>
+					<h2 role="heading" aria-level="1">
+						HTML & CSS foundations
+					</h2>
+					<div class="card-desc">
+						<p>
+							These languages are the backbone of every website,
+							defining structure, content, and presentation.
+						</p>
+					</div>
 				</div>
-				<h2>HTML & CSS foundations</h2>
-				<div class="desc">
-					<p>
-						These languages are the backbone of every website,
-						defining structure, content, and presentation.
-					</p>
-				</div>
-				<div class="footer">
+
+				<div class="card-footer">
 					<img
 						src="./assets/images/image-avatar.webp"
 						alt="image-avatar" />
 
 					<b>Greg Hooper</b>
 				</div>
+
 			</div>
-		</div>
-		<div class="attribution">
-			Challenge by
-			<a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank"
-				>Frontend Mentor</a
-			>. Coded by
-			<a href="https://www.frontendmentor.io/profile/M1RAK"
-				>Abdullahi Ismail</a
-			>.
-		</div>
+		</main>
+
+		<footer role="contentinfo">
+
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a href="https://www.frontendmentor.io/profile/M1RAK"
+					>Abdullahi Ismail</a
+				>.
+			</div>
+			
+		</footer>
 	</body>
 </html>

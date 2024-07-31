@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --clr-suv: #f08512;
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Lexend Deca", serif;
+  font-size: 15px;
+  background-color: var(--Very-light-gray);
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.cards-container {
+  margin: 0 auto;
+  max-width: 900px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 100%;
+  padding: 2rem;
+  color: var(--Transparent-white);
+}
+.card-title {
+  font-family: "Big Shoulders Display";
+  font-size: 2.5rem;
+  color: var(--Very-light-gray);
+  margin: 1.25rem 0;
+  text-transform: uppercase;
+}
+.card-desc {
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+.card-btn {
+  font-family: "Lexend Deca";
+  width: 120px;
+  padding: 0.75rem 0.1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--Very-light-gray);
+  transition: all ease 0.1s;
+}
+.card-btn:hover {
+  cursor: pointer;
+  color: var(--Transparent-white);
+  background-color: transparent;
+  border: 1px solid var(--Very-light-gray);
+}
+.card--sedan {
+  background-color: var(--Bright-orange);
+  border-radius: 5px 0 0 5px;
+}
+.card--sedan button {
+  color: var(--Bright-orange);
+}
+.card--suv {
+  background-color: var(--Dark-cyan);
+}
+.card--suv button {
+  color: var(--Dark-cyan);
+}
+.card--luxury {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 5px 5px 0;
+}
+.card--luxury button {
+  color: var(--Very-dark-cyan);
+}
+
+footer {
+  margin-top: 1rem;
+}
+footer .attribution {
+  text-align: center;
+  font-family: "Lexend Deca";
+}
+footer .attribution a {
+  color: var(--Very-dark-cyan);
+}
+
+@media (max-width: 925px) {
+  body {
+    padding: 10px;
+  }
+  .cards-container {
+    flex-direction: column;
+  }
+  .card--sedan {
+    border-radius: 5px 5px 0 0;
+  }
+  .card--luxury {
+    border-radius: 0 0 5px 5px;
+  }
+}

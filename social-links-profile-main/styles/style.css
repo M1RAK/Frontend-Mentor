@@ -16,7 +16,7 @@
   src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 
-h2 {
+h1 {
   font-size: 1.8rem;
 }
 
@@ -35,30 +35,29 @@ main {
   border-radius: 9px;
 }
 
-header {
+.card {
   text-align: center;
 }
-header h2 {
+.card p {
+  margin-top: 2rem;
+}
+.card h2 {
   margin-top: 2rem;
   margin-bottom: 0.25rem;
 }
-header h3 {
+.card h3 {
   color: var(--Green);
 }
-header .avatar {
+.card-avatar {
   display: flex;
   justify-content: center;
 }
-header .avatar img {
+.card-avatar img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-header p {
-  margin-top: 2rem;
-}
-
-.links-container {
+.card-links-container {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -66,7 +65,7 @@ header p {
   align-items: center;
   gap: 1rem;
 }
-.links-container a {
+.card-links-container .card-link {
   width: calc(100% - 20px);
   text-decoration: none;
   text-align: center;
@@ -77,14 +76,14 @@ header p {
   padding: 15px 20px;
   border-radius: 9px;
 }
-.links-container a:hover {
+.card-links-container .card-link:hover {
   color: var(--Off-Black);
   background-color: var(--Green);
 }
 
 .attribution {
   margin-top: 2rem;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 .attribution a {

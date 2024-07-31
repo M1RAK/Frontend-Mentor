@@ -23,7 +23,7 @@
 	}
 }
 
-h2 {
+h1 {
 	font-size: 1.8rem;
 }
 
@@ -42,8 +42,12 @@ main {
 	border-radius: 9px;
 }
 
-header {
+.card {
 	text-align: center;
+
+	p {
+		margin-top: 2rem;
+	}
 
 	h2 {
 		margin-top: 2rem;
@@ -54,7 +58,7 @@ header {
 		color: var(--Green);
 	}
 
-	.avatar {
+	&-avatar {
 		display: flex;
 		justify-content: center;
 
@@ -65,40 +69,36 @@ header {
 		}
 	}
 
-	p {
+	&-links-container {
 		margin-top: 2rem;
-	}
-}
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
 
-.links-container {
-	margin-top: 2rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
+		.card-link {
+			width: calc(100% - 20px);
+			text-decoration: none;
+			text-align: center;
+			font-family: 'Inter';
+			font-weight: 600;
+			color: var(--White);
+			background-color: var(--Grey);
+			padding: 15px 20px;
+			border-radius: 9px;
 
-	a {
-		width: calc(100% - 20px);
-		text-decoration: none;
-		text-align: center;
-		font-family: 'Inter';
-		font-weight: 600;
-		color: var(--White);
-		background-color: var(--Grey);
-		padding: 15px 20px;
-		border-radius: 9px;
-
-		&:hover {
-			color: var(--Off-Black);
-			background-color: var(--Green);
+			&:hover {
+				color: var(--Off-Black);
+				background-color: var(--Green);
+			}
 		}
 	}
 }
 
 .attribution {
 	margin-top: 2rem;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: center;
 
 	a {

@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [My solution](https://github.com/M1RAK/Frontend-Mentor/tree/main/nft-preview-card-component-main)
--   Live Site URL: [nft-preview-card-component-main](https://courageous-malasada-c282cb.netlify.app/)
+-   Live Site URL: [nft-preview-card-component-main](https://zesty-alfajores-bfeedf.netlify.app/)
 
 ## My process
 

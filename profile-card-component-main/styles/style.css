@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", serif;
+  font-size: 18px;
+  background-color: var(--Dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 50vh right 37vw, top 50vh left 37vw;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.card {
+  background-color: #fff;
+  width: 350px;
+  border-radius: 9px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+  height: 150px;
+  position: relative;
+  background-image: url("../images/bg-pattern-card.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px 9px 0 0;
+}
+.card-avatar {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid whitesmoke;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+}
+.card-avatar img {
+  border-radius: 50%;
+}
+.card-body {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.card-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card-meta--age {
+  color: var(--Dark-gray);
+}
+.card-meta--location {
+  color: var(--Dark-gray);
+}
+.card-footer {
+  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.5px solid var(--Dark-gray);
+  border-radius: 0 0 9px 9px;
+}
+
+.attribution {
+  font-family: "Kumbh Sans";
+  font-size: 16px;
+  margin-top: 3rem;
+  text-align: center;
+}
+.attribution a {
+  color: #fff;
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 300px;
+  }
+}
